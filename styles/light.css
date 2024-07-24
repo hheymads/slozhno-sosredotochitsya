@@ -26,8 +26,7 @@
   --rec-display: none;
 }
 
-@media (prefers-color-scheme: light) {
-  
+@media (prefers-color-scheme: light) {  
   :root { 
     --background-image: url("../images/cover-image-light.png");
     --background-color: #FFF1F7;
@@ -44,5 +43,5 @@
     --card-title-color: #353430;
     --menu-color: #353430;
     --rec-display: none;
-    }
   }
+}
