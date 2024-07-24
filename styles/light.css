@@ -26,8 +26,8 @@
   --rec-display: none;
 }
 
-@media (prefers-color-scheme: light) {  
-  :root { 
+@media (prefers-color-scheme: light) {
+  :root {
     --background-image: url("../images/cover-image-light.png");
     --background-color: #FFF1F7;
     --font-family: IBM Plex mono, monospace;
