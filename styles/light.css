@@ -27,6 +27,7 @@
 }
 
 @media (prefers-color-scheme: light) {
+  
   :root { 
     --background-image: url("../images/cover-image-light.png");
     --background-color: #FFF1F7;

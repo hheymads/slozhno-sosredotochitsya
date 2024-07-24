@@ -143,10 +143,10 @@
   gap: 50px;
 }
 
-.section {
+.section:not(:last-child) {
   display: grid;
   justify-content: center;
-  gap: 17px;
+  gap: 20px;
   font-family: var(--font-family);
 }
 
@@ -159,8 +159,6 @@
 .section_title1 {
   color: var(--card-title-color);
   font-size: var(--font-size);
-  margin-block-start: -10px;
-  margin-block-end: 7px;
 }
 
 .section_article-card {
@@ -205,13 +203,14 @@
 
 .section_card {
   display: grid;
-  gap: 14.2px;
+  gap: 10px;
 }
 
 .section_card-image {
   padding: inherit;
   display: grid;
   gap: 10px;
+  margin-block-start: 13px;
 }
 
 .section_image {
@@ -282,20 +281,12 @@
     padding: 20px;
   }
 
-  .section {
-    gap: 20px;
-  }
-
   .section_title {
     max-width: 236px;
   }
-  
-  .section_title1 {
-    margin-block-start: -4px;
-  }
 
   .section_article-card {
-    margin-block-start: -3px;
+    margin-block-start: -2px;
   }
 
   .section:first-child {
@@ -304,11 +295,12 @@
 
   .section:nth-child(2) {
     grid-template-rows: 70px 1fr;
-    gap: 18px
+    gap: 25px
   }
 
   .section:nth-child(3) {
     grid-template-columns: 236px 1fr;
+    inset-block-start: 10px;
   }
 
   .section:last-child {
@@ -385,7 +377,7 @@
     margin-block-end: 116px;
   }
 
-  .section_title{
+  .section_title {
     max-width: 315px;
   }
 
