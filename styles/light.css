@@ -27,8 +27,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-        /* Дублируем переменные светлой темы */  
+  :root { 
     --background-image: url("../images/cover-image-light.png");
     --background-color: #FFF1F7;
     --font-family: IBM Plex mono, monospace;

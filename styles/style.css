@@ -139,7 +139,7 @@
 
 .main {
   display: grid;
-  padding: 10px;
+  padding: 40px 10px;
   gap: 50px;
 }
 
@@ -238,8 +238,8 @@
   text-shadow: 2px 2px var(--accent-color);
 }
 
-@media (min-width: 768px){
-  .header{
+@media (min-width: 768px) {
+  .header {
     padding: 20px;
   }
 
@@ -277,7 +277,7 @@
     margin-block-end: 165px;
   }
 
-  .main{
+  .main {
     gap: 80px;
     padding: 20px;
   }
@@ -285,7 +285,8 @@
   .section {
     gap: 20px;
   }
-  .section_title{
+
+  .section_title {
     max-width: 236px;
   }
   
@@ -344,7 +345,7 @@
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
   .header {
     padding: 20px;
   }
