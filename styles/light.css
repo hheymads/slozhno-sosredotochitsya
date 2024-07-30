@@ -11,16 +11,16 @@
   */
   --background-image: url("../images/cover-image-light.png");
   --background-color: #FFF1F7;
-  --font-family: IBM Plex mono, monospace;
+  --font-family: "IBM Plex mono", monospace;
   --font-size: 18px;
-  --font-size-title: 116px;
   --color-menu: #353430;
   --color-outline: #353430;
+  --outline-hover: #32312D66;
   --decorated-color: #353430;
-  --text-color1: #353430;
+  --title-color: #353430;
   --accent-color: #FF8DCB;
-  --text-color2: #353430;
-  --title-color: #FFC2E6;
+  --text-color: #353430;
+  --subtitle-color: #FFC2E6;
   --card-title-color: #353430;
   --menu-color: #353430;
   --rec-display: none;
@@ -30,16 +30,15 @@
   :root {
     --background-image: url("../images/cover-image-light.png");
     --background-color: #FFF1F7;
-    --font-family: IBM Plex mono, monospace;
+    --font-family: "IBM Plex mono", monospace;
     --font-size: 18px;
-    --font-size-title: 116px;
     --color-menu: #353430;
     --color-outline: #353430;
     --decorated-color: #353430;
-    --text-color1: #353430;
+    --title-color: #353430;
     --accent-color: #FF8DCB;
-    --text-color2: #353430;
-    --title-color: #FFC2E6;
+    --text-color: #353430;
+    --subtitle-color: #FFC2E6;
     --card-title-color: #353430;
     --menu-color: #353430;
     --rec-display: none;

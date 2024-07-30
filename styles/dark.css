@@ -9,18 +9,18 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --font-family: IBM Plex mono, monospace;
+  --font-family: "IBM Plex mono", monospace;
   --font-size: 18px;
-  --font-size-title: 116px;
   --background-image: url(../images/cover-image-dark.png);
   --background-color: #00183F;
   --color-menu: #FF0070;
   --color-outline: #FF0070;
+  --outline-hover: #FF007066;
   --decorated-color: #FF0070;
-  --text-color1: #000028;
+  --title-color: #000028;
   --accent-color: #FF0070;
-  --text-color2: #F1B2CE;
-  --title-color: #DB00FF;
+  --text-color: #F1B2CE;
+  --subtitle-color: #DB00FF;
   --card-title-color: #FF0070;
   --purple: #DB00FF;
   --menu-color: #353430;

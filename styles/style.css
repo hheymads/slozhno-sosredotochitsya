@@ -18,6 +18,7 @@
   grid-template-rows: 1fr min-content 1fr;
   padding: 10px;
   min-height: 100vh;
+  min-block-size: 668px; 
 }
 
 .decorated-zone {
@@ -81,7 +82,7 @@
   flex-direction: column;
   align-items: center;
   gap: 13px;
-  margin-block-end: -7px;
+  margin-block-start: 8px;
 }
 
 .header__theme-menu-item {
@@ -97,7 +98,7 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--color-menu)
+  outline: 1px solid var(--outline-hover);
 }
 
 .header__theme-menu-button:focus {
@@ -121,7 +122,7 @@
 
 .header_title {
   font-size: var(--font-size-mobile);
-  color: var(--title-color);
+  color: var(--subtitle-color);
   line-height: 95.7px;
   text-shadow: 4px 4px var(--accent-color);
 }
@@ -131,10 +132,13 @@
   display: flex;
   align-self: flex-end;
   justify-content: flex-end;
-  color: var(--text-color1);
-  background-color: var(--accent-color);
+  color: var(--title-color);
   font-weight: bold;
   margin-block-end: 57px;
+}
+
+.title-decor {
+  background-color: var(--accent-color);
 }
 
 .main {
@@ -156,11 +160,6 @@
   margin-block-end: 2px;
 }
 
-.section_title1 {
-  color: var(--card-title-color);
-  font-size: var(--font-size);
-}
-
 .section_article-card {
   display: grid;
   gap: 20px;
@@ -168,13 +167,12 @@
 
 .card-title {
   display: grid;
-  background-color: var(--accent-color);
-  color: var(--text-color1);
+  color: var(--title-color);
   font-size: var(--font-size);
 }
 
 .card-text {
-  color: var(--text-color2);
+  color: var(--text-color);
   line-height: 23.4px;
 }
 
@@ -184,7 +182,7 @@
 }
 
 .link-decor:hover {
-  border-block-end: 1px solid var(--text-color2);
+  border-block-end: 1px solid var(--text-color);
 }
 
 .link-decor:focus {
@@ -192,12 +190,12 @@
 }
 
 .link-decor:focus-visible {
-  outline: 1px solid var(--text-color2);
+  outline: 1px solid var(--text-color);
 }
 
 .section_subtitle {
   background-color: var(--accent-color);
-  color: var(--text-color1);
+  color: var(--title-color);
   font-size: var(--font-size);
 }
 
@@ -225,6 +223,7 @@
   display: grid;
   grid-template-columns: auto;
   min-height: 100vh;
+  min-block-size: 668px;
   padding: 10px;
 }
 
@@ -233,13 +232,14 @@
   justify-self: center;
   font-family: var(--font-family);
   font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
-  color: var(--title-color);
+  color: var(--subtitle-color);
   text-shadow: 2px 2px var(--accent-color);
 }
 
 @media (min-width: 768px) {
   .header {
     padding: 20px;
+    min-block-size: 768px; 
   }
 
   .decorated-zone::before {
@@ -272,8 +272,9 @@
 
   .header_subtitle {
     max-inline-size: 364px;
-    justify-self: end;
+    margin-block-start: 165px;
     margin-block-end: 164px;
+    justify-self: end;
   }
 
   .main {
@@ -285,25 +286,21 @@
     max-width: 236px;
   }
 
-  .section_article-card {
-    margin-block-start: -2px;
-  }
-
-  .section:first-child {
+  .section-explanation {
     grid-template-columns: 236px 1fr;
   }
 
-  .section:nth-child(2) {
-    grid-template-rows: 70px 1fr;
+  .section-question {
+    grid-template-rows: 1fr;
     gap: 25px
   }
 
-  .section:nth-child(3) {
+  .section-adviсe {
     grid-template-columns: 236px 1fr;
     margin-block-start: 3px;
   }
 
-  .section:last-child {
+  .section-pictures {
     gap: 20px;
   }
 
@@ -338,6 +335,8 @@
   }
   .footer__title {
     font-size: var(--font-size-desktop);
+    margin-block-start: 436px;
+    margin-block-end: 433px;
   }
 }
 
@@ -368,6 +367,7 @@
 
   .header__theme-menu-list {
     flex-direction: row;
+    margin-block-start: 0px;
   }
 
   .header_title {
@@ -378,6 +378,7 @@
   .header_subtitle {
     max-inline-size: 491px;
     justify-self: end;
+    margin-block-start: 0px;
     margin-block-end: 116px;
   }
 
@@ -385,24 +386,30 @@
     max-width: 315px;
   }
 
-  .section:first-child {
+  .section-explanation{
     grid-template-columns: 315px 1fr;
   }
 
-  .section:nth-child(2) {
-    grid-template-rows: 47px 1fr;
+  .section-question {
+    grid-template-rows: 1fr;
     gap: 25px;
   }
   
-  .section:nth-child(2) .section_article-card {
+  .section-question .section_article-card {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .section:nth-child(2) .section_card {
-    grid-template-rows: 23px 1fr;
+  .section-question .section_card {
+    grid-template-rows: min-content 1fr;
   }
 
-  .section:nth-child(3) {
+  .section-adviсe {
     grid-template-columns: 315px 1fr;
+    margin-block-start: 0px;
+  }
+
+  .footer__title {
+    margin-block-start: 285px;
+    margin-block-end: 281px;
   }
 }
