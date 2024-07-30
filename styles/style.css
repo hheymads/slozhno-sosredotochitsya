@@ -18,7 +18,7 @@
   grid-template-rows: 1fr min-content 1fr;
   padding: 10px;
   min-height: 100vh;
-  min-block-size: 668px; 
+  min-block-size: 668px;
 }
 
 .decorated-zone {
@@ -239,7 +239,7 @@
 @media (min-width: 768px) {
   .header {
     padding: 20px;
-    min-block-size: 768px; 
+    min-block-size: 768px;
   }
 
   .decorated-zone::before {
@@ -332,11 +332,10 @@
 
   .footer {
     padding: 0px 20px;
+    min-block-size: 1024px;
   }
   .footer__title {
     font-size: var(--font-size-desktop);
-    margin-block-start: 436px;
-    margin-block-end: 433px;
   }
 }
 
@@ -386,7 +385,7 @@
     max-width: 315px;
   }
 
-  .section-explanation{
+  .section-explanation {
     grid-template-columns: 315px 1fr;
   }
 
@@ -408,8 +407,7 @@
     margin-block-start: 0px;
   }
 
-  .footer__title {
-    margin-block-start: 285px;
-    margin-block-end: 281px;
+  .footer {
+    min-block-size: 768px;
   }
 }
